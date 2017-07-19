@@ -1,0 +1,99 @@
+$navigation-background: $secondary-color
+$navigation-border: $border-color
+$navigation-color: $primary-color
+$navigation-height: 70px
+$navigation-padding: 23px
+
+.navigation
+  position: fixed
+  top: 0
+  width: 100%
+  height: $navigation-height
+  padding: $navigation-padding
+  background-color: $navigation-background
+  border-top: 1px solid $navigation-border
+  border-bottom: 1px solid $navigation-border
+  z-index: 1
+
+.navigation__brand
+  display: inline-block
+  @include font(1.35rem, 900, $navigation-color)
+
+.navigation__languages
+  display: inline-block
+  float: right
+  padding-right: 20px
+  & img
+    display: inline-block
+    padding: 0 5px
+    cursor: pointer
+
+.navigation__toggle
+  float: right
+  display: inline-block
+  cursor: pointer
+
+.navigation__menu
+  display: none
+  position: absolute
+  top: $navigation-height
+  left: 0
+  width: 100%
+  padding: 30px 0
+  background-color: $navigation-background
+  border-bottom: 1px solid $navigation-border
+  text-align: center
+
+.navigation__menu-item p
+  cursor: pointer
+
+.navigation__menu-item
+  & a, & p
+    display: block
+    padding: 10px
+    @include font(1.35rem, 300, $navigation-color)
+
+.navigation__menu-item--selected
+  & p
+    @include font(1.35rem, 400, $navigation-color)
+
+.navigation__submenu
+  display: none
+
+.navigation__submenu-item a
+  @include font(1.25rem, 300, $navigation-color)
+
+.navigation__submenu-item
+
+@media (min-width: 992px)
+  .navigation__toggle
+    display: none
+
+  .navigation__menu
+    display: block
+    float: right
+    position: static
+    top: auto
+    left: auto
+    padding: 0
+
+  .navigation__menu
+    width: auto
+    border: none
+
+  .navigation__menu-item
+    display: inline-block
+    position: relative
+    & > a, & > p
+      padding: 0 10px
+
+  .navigation__submenu
+    position: absolute
+    top: 100%
+    left: 50%
+    transform: translateX(-50%)
+    margin-top: $navigation-padding
+    padding: 10px 30px
+    background-color: $navigation-background
+    border: 1px solid $navigation-border
+    border-top: none

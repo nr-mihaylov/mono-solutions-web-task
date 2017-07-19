@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    title= 'TEST'
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(href='https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Playfair+Display:400,400i,700,700i,900,900i&amp;subset=latin-ext' rel='stylesheet')
+    link(rel='stylesheet', href='/stylesheets/normalize.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap-grid.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    nav.navigation
+      a.navigation__brand(href=brand.url)= brand.label
+      img.navigation__toggle(src='https://png.icons8.com/menu/android/24', id='toggle')
+      ul.navigation__menu
+        each item in menu
+          if item.category
+            li.navigation__menu-item
+              p= item.category
+              ul.navigation__submenu
+                each page in item.pages
+                  if (!page.category)
+                    li.navigation__submenu-item
+                      a(href=page.url)= page.label
+          else
+            li.navigation__menu-item
+              a(href=item.url)= item.label
+      .navigation__languages
+        img(src="https://png.icons8.com/great-britain/color/24" data-lang="en" title="English")
+        img(src="https://png.icons8.com/denmark/color/24" data-lang="dk" title="Danish")
+    block content
+    footer.footer
+      each link in footer
+        a.footer__link(href=link.url)= link.label
+        
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js")
+  script(async, defer, src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSZLUtV16IaZFz631ebcKFWFmz7xWOwY0&callback=initMap")
+  script(src="/javascripts/js.cookie.js")
+  script(src="/javascripts/lang.js")
+  script(src="/javascripts/menu.js")
+  script(src="/javascripts/map.js")
+  script(src="/javascripts/gallery.js")
+  script(src="/javascripts/contact.js")

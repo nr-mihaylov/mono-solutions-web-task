@@ -1,0 +1,31 @@
+*
+  box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6, p, ul
+  margin: 0
+  padding: 0
+  list-style: none
+
+a, li
+  text-decoration: none
+
+input
+  display: block
+
+$primary-color: #111
+$secondary-color: #FFF
+$text-color: #111
+$text-color-inverted: #FFF
+$border-color: #CCC
+
+@mixin font($size: false, $weight: false, $colour: false)
+  font-family: 'Lato', sans-serif
+  @if $size { font-size: $size; }
+  @if $colour { color: $colour; }
+  @if $weight { font-weight: $weight; }
+
+@import 'menu'
+@import 'index'
+@import 'footer'
+@import 'attraction'
+@import 'experience'

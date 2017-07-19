@@ -1,0 +1,43 @@
+$submit-background: $primary-color
+$submit-color: $text-color-inverted
+
+.contact-form
+  fieldset
+    display: block
+    width: 100%
+    max-width: 500px
+    margin: 0 auto
+    padding-bottom: 20px
+    border: none
+  legend
+    display: block
+    @include font(1rem, 400, $text-color)
+    padding-bottom: 5px
+  label
+    display: inline-block
+    @include font(1rem, 400, $text-color)
+    padding-bottom: 5px
+  input
+    width: 100%
+    padding: 5px 7.5px
+    @include font(1rem, 700, $text-color)
+    &[type="checkbox"], &[type="radio"]
+      display: inline-block
+      width: auto
+      margin-left: 5px
+      margin-right: 25px
+    &[type="submit"]
+      padding: 10px
+      background-color: $submit-background
+      outline: none
+      border: none
+      @include font(1rem, 900, $submit-color)
+      text-transform: uppercase
+      cursor: pointer
+
+.contact-form__box-label
+  width: 200px
+
+.contact-form__error
+  padding-top: 10px
+  @include font(1rem, 400, red)

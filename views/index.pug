@@ -1,0 +1,53 @@
+extends layout
+
+block content
+  main.fold
+    .fold__glass
+      header.fold__header
+        h1.fold__title= content.foldTitle
+        p.fold__subtitle= content.foldSubtitle
+  section.section-container
+    .container
+      .row
+        .col-sm-12.col-md-12.col-lg-12
+          header.section-container__header
+            h2.section-container__title= content.aboutTitle
+            p.section-container__subtitle= content.aboutSubtitle
+      .row
+        .col-sm-12.col-md-12.col-lg-12
+          .section-container__content
+            .row
+              .col-sm-12.col-md-6.col-lg-6
+                article.about__description= content.aboutDescription
+              .col-sm-12.col-md-6.col-lg-6
+                div#map.about__map
+  section.section-container
+    .container
+      .row
+        .col-sm-12.col-md-12.col-lg-12
+          header.section-container__header
+            h2.section-container__title= content.attractionsTitle
+            p.section-container__subtitle= content.attractionsSubtitle
+      .row
+        .col-sm-12.col-md-12.col-lg-12
+          .section-container__content
+            .row
+              each attraction in attractions
+                .col-sm-12.col-md-4.col-lg-4
+                  a(href=attraction.url)
+                    article.attraction-preview
+                      header.attraction-preview__header
+                        h3.attraction-preview__headline= attraction.label
+                      img.attraction-preview__image(src=attraction.img)            
+  section.section-container
+    .container
+      .row
+        .col-sm-12.col-md-12.col-lg-12
+          header.section-container__header
+            h2.section-container__title= content.experienceTitle
+            p.section-container__subtitle= content.experienceSubtitle
+      .row
+        .col-sm-12.col-md-12.col-lg-12
+          .section-container__content
+            .cta-wrapper
+              a.cta-button(href=content.experienceUrl)= content.experienceLabel

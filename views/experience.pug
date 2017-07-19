@@ -1,0 +1,50 @@
+extends layout
+
+block content
+  section.section-container
+    .container
+      .row
+        .col-sm-12.col-md-12.col-lg-12
+          header.section-container__header
+            h2.section-container__title= content.title
+            p.section-container__subtitle= content.subtitle
+      .row
+        .col-sm-12.col-md-12.col-lg-12
+          .section-container__content
+            form.contact-form(action="/experience" method="post" novalidate)
+              fieldset
+                label(for="name")= content.questions.name
+                input(id="name" type='text' name='name')
+                p#name-error.contact-form__error
+              fieldset
+                label(for="length")= content.questions.length
+                input(id="length" type='number' name="length")
+                p#length-error.contact-form__error
+              fieldset
+                label(for="date")= content.questions.date
+                input(id="date" type="date" name="date")
+                p#date-error.contact-form__error
+              fieldset
+                legend= content.questions.visited
+                each attraction in content.questions.attractions
+                  div
+                    label.contact-form__box-label= attraction
+                    input(class="attraction-visited" type="checkbox" name="visited" value=attraction)
+                p#attraction-visited-error.contact-form__error
+              fieldset
+                legend= content.questions.best
+                each attraction in content.questions.attractions
+                  div
+                    label.contact-form__box-label= attraction
+                    input(class="best-attraction" type="radio" name="best" value=attraction)
+                p#best-attraction-error.contact-form__error
+              fieldset
+                label(for="contact")= content.questions.email
+                input(id="contact" type="email" name="email")
+                p#contact-error.contact-form__error
+              fieldset
+                label(for="picture")= content.questions.picture
+                input(id="picture" type="file" name="file")
+                p#picture-error.contact-form__error
+              fieldset
+                input(type='submit')

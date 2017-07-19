@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  section.section-container
+    .container
+      .row
+        .col-sm-12.col-md-12.col-lg-12
+          header.section-container__header
+            h2.section-container__title= content.title
+      .row
+        .col-sm-12.col-md-12.col-lg-12
+          .section-container__content
+            .attraction-description= content.description
+            .gallery
+              img(src="/images/lighthouse.jpg")
+              img(src="/images/sand-art.jpg")
+              img(src="/images/beach.jpg")

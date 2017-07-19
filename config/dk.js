@@ -1,0 +1,31 @@
+module.exports = {
+  '0001': 'Homepage (DK)',
+  '0002': 'Welcome to Søndervig (DK)',
+  '0003': 'Summer awaits you (DK)',
+  '0004': 'Attractions (DK)',
+  '0005': 'Check out what Søndervig has to offer to its visitors. (DK)',
+  '0006': 'About Søndervig (DK)',
+  '0007': 'Søndervig is one of the most popular holiday destinations by the North Sea; with its location right on the coastline, close to the fjord, and in the midst of the unique dune landscape there is every chance to have a great vacation here. In addition to Søndervig’s beautiful scenery, the town also offers shopping, restaurants, cafés, and fun activities for kids at all hours of the day. The beaches at Søndervig are some of the best on the Danish west coast and each year they attract scores of water loving tourists. This cosy beach resort, which is situated between the North Sea and Ringkøbing Fjord, offers a wide selection of accommodations: holiday homes on the seafront, homely bed & breakfasts, holiday apartments, and a campsite; here you can easily find what accommodates your needs. (DK)',
+  '0008': 'Attractions (DK)',
+  '0009': 'write to us (DK)',
+  '0010': 'Attractions (DK)',
+  '0011': 'Lighthouse (DK)',
+  '0013': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?',
+  '0014': 'Sand Art (DK)',
+  '0016': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?',
+  '0017': 'Beach (DK)',
+  '0019': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?',
+  '0020': {
+    name: 'What is your name? (DK)',
+    length: 'For how long did you visit Søndervig? (DK)',
+    date: 'When did you visit Søndervig? (DK)',
+    visited: 'Which attractions did you visit? (DK)',
+    best: 'Which was the best attraction? (DK)',
+    attractions: ['Lighthouse', 'Sand Art', 'Beach'],
+    email: 'What is your email? (DK)',
+    picture: 'Send us a picture! (DK)'
+  },
+  '0021': 'Experience (DK)',
+  '0022': 'Have you visited Søndervig already? Tell us about your experiences by contacting us! (DK)',
+  '0023': 'Long & wide beaches and a lot of adventures (DK)'
+}
